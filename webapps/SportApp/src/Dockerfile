@@ -1,0 +1,11 @@
+FROM tomcat:9.0-jdk11-corretto
+
+# Default Tomcat apps hata rahe hain
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Apne project ki WAR file ko Tomcat ke ROOT.war me copy kar rahe hain
+COPY webapps/SportApp.war /usr/local/tomcat/webapps/ROOT.war
+
+EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
