@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\pc\\Desktop\\javax.servlet-api-4.0.1.jar"
+    ],
+    "java.project.outputPath": "C:/xampp/tomcat/webapps/SportApp/WEB-INF/classes"
+}

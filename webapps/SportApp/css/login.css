@@ -1,0 +1,33 @@
+body{
+
+background:#e8eef7;
+font-family:Arial;
+
+}
+
+.login-box{
+
+width:350px;
+margin:100px auto;
+padding:20px;
+background:white;
+border-radius:10px;
+text-align:center;
+
+}
+
+.login-box input{
+
+width:90%;
+padding:10px;
+margin:10px;
+
+}
+
+.login-box input[type=submit]{
+
+background:#003366;
+color:white;
+border:none;
+
+}
