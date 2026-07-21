@@ -53,7 +53,7 @@
             <a href="login.jsp" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold text-lg shadow-xl shadow-emerald-500/25 transition-all duration-300 transform hover:-translate-y-1">
                 Go to Login Page &rarr;
             </a>
-            <a href="dasbord.jsp" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-slate-700 bg-slate-800/50 hover:bg-slate-800 text-slate-300 font-semibold text-lg transition-all duration-300">
+            <a class="w-full sm:w-auto px-8 py-4 rounded-xl border border-slate-700 bg-slate-800/50 hover:bg-slate-800 text-slate-300 font-semibold text-lg transition-all duration-300">
                 View Dashboard
             </a>
         </div>
