@@ -1,4 +1,4 @@
-FROM tomcat:9.0-jdk11-corretto
+FROM tomcat:9.0-jdk17-corretto
 
 # Default Tomcat apps hata rahe hain
 RUN rm -rf /usr/local/tomcat/webapps/*
