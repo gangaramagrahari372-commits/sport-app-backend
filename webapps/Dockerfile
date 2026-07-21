@@ -4,7 +4,7 @@ FROM tomcat:9.0-jdk11-corretto
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Apne project ki WAR file ko Tomcat ke ROOT.war me copy kar rahe hain
-COPY webapps/SportApp /usr/local/tomcat/webapps/ROOT
+COPY SportApp /usr/local/tomcat/webapps/ROOT
 
 EXPOSE 8080
 
