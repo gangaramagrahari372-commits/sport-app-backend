@@ -25,11 +25,18 @@ public class RegisterServlet extends HttpServlet {
 
         UserDAO dao = new UserDAO();
 
-        if (dao.registerUser(user)) {
-            response.sendRedirect("login.jsp");
-        } else {
-            response.sendRedirect("register.jsp");
-        }
+        boolean status = false;
+try {
+    status = dao.registerUser(user);
+} catch (Exception e) {
+    throw new ServletException("Database Error: " + e.getMessage(), e);
+}
+
+if (status) {
+    response.sendRedirect("login.jsp");
+} else {
+    throw new ServletException("Registration Failed! UserDAO returned false. Check database connection or logs.");
+}
     }
 
     protected void doGet(HttpServletRequest request,
