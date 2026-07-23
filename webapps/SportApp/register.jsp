@@ -61,7 +61,7 @@
 <body>
     <div class="form-container">
         <h2>User Registration</h2>
-        <form action="RegisterServlet" method="POST" onsubmit="return validateForm()">
+        <form action="RegisterServlet" method="POST" >
             <div class="form-group">
                 <label>Full Name</label>
                 <input type="text" name="name" required placeholder="Enter your name">
