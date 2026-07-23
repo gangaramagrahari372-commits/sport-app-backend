@@ -34,23 +34,28 @@
         .link-back:hover { color: #ffffff; }
     </style>
     <script>
-        function validateForm() {
-            var age = parseInt(document.getElementById("age").value);
-            var password = document.getElementById("password").value;
-            var confirmPassword = document.getElementById("confirmPassword").value;
+      function validateForm() {
+    var ageInput = document.getElementById("age");
+    var passInput = document.getElementById("password");
+    var confirmPassInput = document.getElementById("confirmPassword");
 
-            // Age criteria restriction (8-60 years)
-            if (age < 8 || age > 60) {
-                alert("Age must be between 8 and 60 years!");
-                return false;
-            }
-            // Password matching check
-            if (password !== confirmPassword) {
-                alert("Passwords do not match!");
-                return false;
-            }
-            return true;
+    if (ageInput && ageInput.value) {
+        var age = parseInt(ageInput.value);
+        if (isNaN(age) || age < 8 || age > 60) {
+            alert("Age must be between 8 and 60 years!");
+            return false;
         }
+    }
+
+    if (passInput && confirmPassInput) {
+        if (passInput.value !== confirmPassInput.value) {
+            alert("Passwords do not match!");
+            return false;
+        }
+    }
+
+    return true;
+}
     </script>
 </head>
 <body>
